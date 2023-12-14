@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>portfolio</title>
+        <style>
+            body{
+                font-family:'arial',Times,serif,sans-serif;
+                margin:0;
+            padding:0;
+            background-color: #c63cd6;
+        }
+        header{
+            background-color: #454d48;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative; /* add this */
+        }
+        .header-content h1{
+            font-size: 2.5rem;
+        }
+        /* add styles for the round profile picture */
+        .profile-picture{
+            width: 150px;
+            height: 150px;
+            border-radius: 75%;
+            object-fit: cover;
+            position: absolute;
+            top: 10px;
+            left : 200px;
+        }
+        nav{
+            background-color: #1c9ab9;
+            color: #fff;
+            text-align: center;
+        }
+        nav u1{
+            list-style-type: none;
+            padding: 0;
+        }
+        nav u1 li{
+            display: inline;
+            margin: 0 2px;
+        }
+        nav u1 li a{
+            text-decoration: none;
+        }
+        .section-content{
+            background-color: #19bad6;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: justify;
+        }
+        .download-button{
+            background-color: #470fe0;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+        }
+        .download-button:hover{
+            background-color: #555;
+        }
+        footer{
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+        u1{
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        </style>
+    </html>
+    <body>
+        <header>
+            <div class="header-content">
+                <!--add your profile picture here-->
+                <img src="C:\Users\ELCOT\sarmi.jpg"class="profile-picture">
+                color: #ca1432;
+                    <h1>SARMILA S</h1>
+
+                </div>
+</header>
+<nav>
+    <u1>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="skills">Skills</a></li>
+        <li><a href="projects">Projects</a></li>
+        <li><a href="resume">Resume</a></li>
+        </u1>
+</nav>
+<section id="about">
+    <div class="section-content">
+        <h2>About Me</h2>
+        <p>my name's sarmi and i got a graduation in a computerscience and teaching field.i have more interested in teaching and web designing.and i follow this quote"accept the situation and move with on smile".
+            two years experience in teacher at srkv hss</p>
+    </div>
+</section>
+
+<section id="education">
+    <div class="section-content">
+        <h2>Education</h2>
+        <p>Shree Raghavendra arts and science college - B.sc(computer science)</p>
+        <h2>Education</h2>
+        <p>shree raghavendra arts and science college- B.Ed(cs)</p>
+</div>
+</section>
+<section id="skills">
+    <div class="section-content">
+        <h2>Skills</h2>
+        <u1>
+        <li>CyberSecurity</li>
+        <li>Communication</li>
+        <li>Classroom Management</li>
+        <li>Python</li>
+        </u1>
+    </div>
+</section>   
+<section id="projects">
+    <div class="section-content">
+        <h2>projects</h2>
+        <u1>
+            <li><a href="#">school based practical</a></li>
+            <li><a href="#">web designing</a></li>
+            <!--add more projects links here-->
+            </u1>
+            </div>
+            </section>
+            <section id="resume">
+                <div class="section-content">
+                <center>
+                    <h2>Resume</h2>
+                    <a href= target="_blank" class="download-button">Download my project</a>
+
+                </center>
+                </div>
+            </section>
+            <footer>
+                <p>&copy; 2023 SARMILA SANTHOSHKUMAR</p>
+
+            </footer>
+            <script>
+                // smooth scrolling to section when clicking on navigation links 
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href').substring(1);
+                        const targetElement=document.getElementById(targetId);
+                        if(targetElement)
+                        {
+                            window.scrollTo({
+                                top: targetElement.offsetTop,
+                                behaviour: 'smooth'
+                            });
+                        }
+                    });
+                });
+                 </script>
+                </body>
+</html>
+</head>
+</html>
